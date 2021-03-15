@@ -9,7 +9,16 @@
   src: local("Suisse"), url(./fonts/SuisseIntl-Regular.otf) format("truetype");
   font-weight: 400;
 }
+
+/* THAT GREEN 00FF29 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: black;
+  color: white;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
