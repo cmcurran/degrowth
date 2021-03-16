@@ -20,4 +20,5 @@ const BetaTag = styled.span`
   font-size: 20px;
   margin-left: -2rem;
 `;
+
 export default Header;

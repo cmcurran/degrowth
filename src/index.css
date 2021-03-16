@@ -11,6 +11,9 @@
 }
 
 /* THAT GREEN 00FF29 */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
