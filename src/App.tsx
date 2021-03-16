@@ -1,18 +1,23 @@
-import React from "react";
 import logo from "./logo.svg";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Header from "./Components/Header";
 import SectionWithHeader from "./Components/SectionWithHeader";
 import Nav from "./Components/Nav";
 import Degrowth from "./Copy";
 
+//TODO debounce window listeners?
+//Turn off window listeners when scrolled past header on page to stop nav from yeeting away
+
 const App = () => {
+  const [betaBottom, setBetaBottom] = useState<number | null>(null);
+
   return (
     <Wrapper>
-      <Nav content={Degrowth.nav} />
+      <Nav content={Degrowth.nav} betaBottom={betaBottom} />
 
       <InnerWrapper>
-        <Header text={Degrowth.header} />
+        <Header text={Degrowth.header} setBetaBottom={setBetaBottom} />
 
         {Degrowth.sections.map((section, i) => {
           if (
