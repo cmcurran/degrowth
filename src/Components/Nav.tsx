@@ -54,7 +54,8 @@ const Wrapper = styled.div<{ top: number | null; height: number | null }>`
   right: calc(var(--vw, 1vw) * 18.299);
   top: 45.31vh;
   top: calc(var(--vh, 1vh) * 45.31);
-  top: ${({ top, height }) => top && height && `${top - height}px`};
+  top: ${({ top, height }) =>
+    top && height ? `${top - height}px` : "491.515625px"};
 `;
 
 const Header = styled.div`

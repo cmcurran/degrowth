@@ -10,7 +10,7 @@ const Header = ({
   text,
   setBetaBottom,
 }: {
-  text: string;
+  text: string[];
   setBetaBottom: Dispatch<SetStateAction<number | null>>;
 }) => {
   const betaRef = useRef<HTMLSpanElement>(null);
@@ -33,13 +33,28 @@ const Header = ({
   }, [betaRef]);
 
   return (
-    <Wrapper>
-      {text} <BetaTag ref={betaRef}>beta</BetaTag>
-    </Wrapper>
+    <OuterWrapper>
+      {text.map((item, i) => (
+        <Wrapper key={item}>
+          {item}
+          {i === text.length - 1 && <BetaTag ref={betaRef}>beta</BetaTag>}
+        </Wrapper>
+      ))}
+    </OuterWrapper>
   );
 };
 
+const OuterWrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 const Wrapper = styled.div`
+  white-space: nowrap;
+  width: 100%;
   text-transform: uppercase;
   font-family: "Suisse";
   /* font-size: 142px; */
@@ -48,7 +63,7 @@ const Wrapper = styled.div`
   /* line-height: 142px; */
   line-height: 7.395vw;
   line-height: calc(var(--vw, 1vw) * 7.395);
-  height: 100vh;
+  /* text-align: left; */
 `;
 
 const BetaTag = styled.span`
@@ -58,8 +73,8 @@ const BetaTag = styled.span`
   font-size: calc(var(--vw, 1vw) * 1.041);
   /* font-size: 20px; */
   /* margin-left: -32px; */
-  margin-left: -1.666vw;
-  margin-left: calc(var(--vw, 1vw) * -1.666);
+  /* margin-left: -0.1vw;
+  margin-left: calc(var(--vw, 1vw) * -0.1); */
 `;
 
 export default Header;

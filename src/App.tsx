@@ -45,7 +45,8 @@ const App = () => {
 
 const Wrapper = styled.div`
   padding-left: 10vw;
-  padding-top: 4vh;
+  /* padding-top: 4vh; */
+
   width: 100%;
 `;
 

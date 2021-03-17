@@ -57,6 +57,8 @@ const SectionWithHeader = ({
 
 const BibliographyLink = styled.a<{ variant?: "noLink" }>`
   font-family: "Suisse";
+  /* font-family: ${({ variant }) =>
+    variant === "noLink" ? "Suisse" : "MG Mono"}; */
   /* font-size: 28px; */
   font-size: 1.458vw;
   font-size: calc(var(--vw, 1vw) * 1.458);
@@ -65,10 +67,10 @@ const BibliographyLink = styled.a<{ variant?: "noLink" }>`
   /* padding-bottom: 16px; */
   padding-bottom: 0.833vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
+  text-decoration: ${({ variant }) => variant !== "noLink" && "underline"};
 
   :hover {
     color: ${({ variant }) => variant !== "noLink" && "#00ff29"};
-    text-decoration: ${({ variant }) => variant !== "noLink" && "underline"};
   }
 `;
 // line-height: 7.395vw;

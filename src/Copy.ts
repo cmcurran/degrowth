@@ -1,5 +1,5 @@
 const degrowth = {
-  header: "the degrowth toolbox for artistic practices",
+  header: ["the", "degrowth", "toolbox", "for artistic", "practices"],
   nav: [
     { section: "a0", title: "purpose" },
     { section: "a1", title: "what is degrowth" },
