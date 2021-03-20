@@ -7,13 +7,9 @@ import Nav from "./Components/Nav";
 import Degrowth from "./Copy";
 
 //TODO debounce window listeners?
-//Turn off window listeners when scrolled past header on page to stop nav from yeeting away
-//possible solution is to not directly take top value from beta --
-//take the percentage from offsetTop and window height
 
 //hover [1]
 
-//midview - dropdown nav menu (cavet icon?)
 //below 1250 pixels
 // increase body to fullwidth
 //increase font sizes for all copy

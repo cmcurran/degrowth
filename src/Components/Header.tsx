@@ -23,7 +23,15 @@ const Header = ({
       if (betaRef.current === null) {
         return;
       }
-      setBetaBottom(betaRef.current.getBoundingClientRect().bottom);
+
+      const scrollTop =
+        window.pageYOffset ||
+        (document.documentElement || document.body.parentNode || document.body)
+          .scrollTop;
+
+      if (scrollTop === 0) {
+        setBetaBottom(betaRef.current.getBoundingClientRect().bottom);
+      }
     };
 
     window.addEventListener("resize", handleResize);
