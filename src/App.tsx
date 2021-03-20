@@ -8,13 +8,9 @@ import Degrowth from "./Copy";
 
 //TODO debounce window listeners?
 
+// if on small view and nav open -> resize over 750 px -> setOpen(false)
+
 //hover [1]
-
-//below 1250 pixels
-// increase body to fullwidth
-//increase font sizes for all copy
-
-//mobile full screen menu modal fade in
 
 const App = () => {
   const [betaBottom, setBetaBottom] = useState<number | null>(null);
@@ -52,6 +48,12 @@ const App = () => {
 
 const Wrapper = styled.div`
   padding-left: 10vw;
+  padding-left: calc(var(--vw, 1vw) * 10);
+
+  @media (max-width: 749px) {
+    padding-right: 10vw;
+    padding-right: calc(var(--vw, 1vw) * 10);
+  }
 
   /* padding-top: 4vh; */
 
@@ -60,7 +62,12 @@ const Wrapper = styled.div`
 
 const InnerWrapper = styled.div`
   width: 55%;
-  @media (max-width: 1249px) {
+
+  @media (max-width: 749px) {
+    width: 100%;
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     width: 70%;
   }
 `;

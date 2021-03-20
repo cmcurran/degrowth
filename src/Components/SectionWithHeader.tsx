@@ -69,7 +69,23 @@ const BibliographyLink = styled.a<{ variant?: "noLink" }>`
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
   text-decoration: ${({ variant }) => variant !== "noLink" && "underline"};
 
-  @media (max-width: 1249px) {
+  @media (max-width: 549px) {
+    font-size: 4vw;
+    font-size: calc(var(--vw, 1vw) * 4);
+
+    padding-bottom: 4vw;
+    padding-bottom: calc(var(--vw, 1vw) * 4);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 3vw;
+    font-size: calc(var(--vw, 1vw) * 3);
+
+    padding-bottom: 3vw;
+    padding-bottom: calc(var(--vw, 1vw) * 3);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 1.9vw;
     font-size: calc(var(--vw, 1vw) * 1.9);
 
@@ -93,7 +109,23 @@ const GlossaryHeader = styled.div`
   padding-bottom: 0.833vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
 
-  @media (max-width: 1249px) {
+  @media (max-width: 549px) {
+    font-size: 5vw;
+    font-size: calc(var(--vw, 1vw) * 5);
+
+    padding-bottom: 2vw;
+    padding-bottom: calc(var(--vw, 1vw) * 2);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 3.5vw;
+    font-size: calc(var(--vw, 1vw) * 3.5);
+
+    padding-bottom: 2vw;
+    padding-bottom: calc(var(--vw, 1vw) * 2);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 1.9vw;
     font-size: calc(var(--vw, 1vw) * 1.9);
   }
@@ -134,7 +166,29 @@ const Section = styled.span`
   padding-right: 0.625vw;
   padding-right: calc(var(--vw, 1vw) * 0.625);
 
-  @media (max-width: 1249px) {
+  @media (max-width: 549px) {
+    font-size: 4vw;
+    font-size: calc(var(--vw, 1vw) * 4);
+
+    line-height: 7vw;
+    line-height: calc(var(--vw, 1vw) * 7);
+
+    padding-right: 2vw;
+    padding-right: calc(var(--vw, 1vw) * 2);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 3vw;
+    font-size: calc(var(--vw, 1vw) * 3);
+
+    line-height: 5.3vw;
+    line-height: calc(var(--vw, 1vw) * 5.3);
+
+    padding-right: 2vw;
+    padding-right: calc(var(--vw, 1vw) * 2);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 1.8vw;
     font-size: calc(var(--vw, 1vw) * 1.8);
 
@@ -152,7 +206,17 @@ const Header = styled.span`
   font-size: 2.8125vw;
   font-size: calc(var(--vw, 1vw) * 2.8125);
 
-  @media (max-width: 1249px) {
+  @media (max-width: 549px) {
+    font-size: 6.65vw;
+    font-size: calc(var(--vw, 1vw) * 6.65);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 5.5vw;
+    font-size: calc(var(--vw, 1vw) * 5.5);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 3.7vw;
     font-size: calc(var(--vw, 1vw) * 3.7);
   }
@@ -167,7 +231,23 @@ const Body = styled.div`
   padding-bottom: 1.666vw;
   padding-bottom: calc(var(--vw, 1vw) * 1.666);
 
-  @media (max-width: 1249px) {
+  @media (max-width: 549px) {
+    font-size: 5vw;
+    font-size: calc(var(--vw, 1vw) * 5);
+
+    padding-bottom: 6vw;
+    padding-bottom: calc(var(--vw, 1vw) * 6);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 2.9vw;
+    font-size: calc(var(--vw, 1vw) * 2.9);
+
+    padding-bottom: 4vw;
+    padding-bottom: calc(var(--vw, 1vw) * 4);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 1.9vw;
     font-size: calc(var(--vw, 1vw) * 1.9);
 
@@ -181,7 +261,17 @@ const BodyXL = styled(Body)`
   font-size: 1.875vw;
   font-size: calc(var(--vw, 1vw) * 1.875);
 
-  @media (max-width: 1249px) {
+  @media (max-width: 549px) {
+    font-size: 6vw;
+    font-size: calc(var(--vw, 1vw) * 6);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 3.7vw;
+    font-size: calc(var(--vw, 1vw) * 3.7);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 2.4vw;
     font-size: calc(var(--vw, 1vw) * 2.4);
   }

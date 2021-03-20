@@ -73,7 +73,14 @@ const Wrapper = styled.div`
   line-height: calc(var(--vw, 1vw) * 7.395);
   /* text-align: left; */
 
-  @media (max-width: 1249px) {
+  @media (max-width: 749px) {
+    font-size: 11.8vw;
+    font-size: calc(var(--vw, 1vw) * 11.8);
+    line-height: 11.8vw;
+    line-height: calc(var(--vw, 1vw) * 11.8);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 9.395vw;
     font-size: calc(var(--vw, 1vw) * 9.395);
     line-height: 9.395vw;
@@ -90,7 +97,13 @@ const BetaTag = styled.span`
   /* margin-left: -32px; */
   /* margin-left: -0.1vw;
   margin-left: calc(var(--vw, 1vw) * -0.1); */
-  @media (max-width: 1249px) {
+
+  @media (max-width: 749px) {
+    font-size: 2.5vw;
+    font-size: calc(var(--vw, 1vw) * 2.5);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 1.3vw;
     font-size: calc(var(--vw, 1vw) * 1.3);
   }
