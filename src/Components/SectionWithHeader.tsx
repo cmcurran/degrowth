@@ -69,6 +69,14 @@ const BibliographyLink = styled.a<{ variant?: "noLink" }>`
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
   text-decoration: ${({ variant }) => variant !== "noLink" && "underline"};
 
+  @media (max-width: 1249px) {
+    font-size: 1.9vw;
+    font-size: calc(var(--vw, 1vw) * 1.9);
+
+    padding-bottom: 1.5vw;
+    padding-bottom: calc(var(--vw, 1vw) * 1.5);
+  }
+
   :hover {
     color: ${({ variant }) => variant !== "noLink" && "#00ff29"};
   }
@@ -84,6 +92,11 @@ const GlossaryHeader = styled.div`
   /* padding-bottom: 16px; */
   padding-bottom: 0.833vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
+
+  @media (max-width: 1249px) {
+    font-size: 1.9vw;
+    font-size: calc(var(--vw, 1vw) * 1.9);
+  }
 `;
 
 const Wrapper = styled.div`
@@ -120,6 +133,17 @@ const Section = styled.span`
   /* padding-right: 12px; */
   padding-right: 0.625vw;
   padding-right: calc(var(--vw, 1vw) * 0.625);
+
+  @media (max-width: 1249px) {
+    font-size: 1.8vw;
+    font-size: calc(var(--vw, 1vw) * 1.8);
+
+    line-height: 3.4vw;
+    line-height: calc(var(--vw, 1vw) * 3.4);
+
+    padding-right: 1vw;
+    padding-right: calc(var(--vw, 1vw) * 1);
+  }
 `;
 
 const Header = styled.span`
@@ -127,6 +151,11 @@ const Header = styled.span`
   /* font-size: 54px; */
   font-size: 2.8125vw;
   font-size: calc(var(--vw, 1vw) * 2.8125);
+
+  @media (max-width: 1249px) {
+    font-size: 3.7vw;
+    font-size: calc(var(--vw, 1vw) * 3.7);
+  }
 `;
 /* font-size: ${({ variant }) => (variant === "xl" ? "36px" : "28px")}; */
 const Body = styled.div`
@@ -137,11 +166,24 @@ const Body = styled.div`
   /* padding-bottom: 32px; */
   padding-bottom: 1.666vw;
   padding-bottom: calc(var(--vw, 1vw) * 1.666);
+
+  @media (max-width: 1249px) {
+    font-size: 1.9vw;
+    font-size: calc(var(--vw, 1vw) * 1.9);
+
+    padding-bottom: 2vw;
+    padding-bottom: calc(var(--vw, 1vw) * 2);
+  }
 `;
 
 const BodyXL = styled(Body)`
   /* 32px */
   font-size: 1.875vw;
   font-size: calc(var(--vw, 1vw) * 1.875);
+
+  @media (max-width: 1249px) {
+    font-size: 2.4vw;
+    font-size: calc(var(--vw, 1vw) * 2.4);
+  }
 `;
 export default SectionWithHeader;

@@ -51,11 +51,18 @@ const Wrapper = styled.div<{ top: number | null; height: number | null }>`
   /* right: 350px;
   top: 430px; */
   right: 18.229vw;
-  right: calc(var(--vw, 1vw) * 18.299);
-  top: 45.31vh;
-  top: calc(var(--vh, 1vh) * 45.31);
+  right: calc(var(--vw, 1vw) * 18.229);
+  /* top: 45.31vh;
+  top: calc(var(--vh, 1vh) * 45.31); */
   top: ${({ top, height }) =>
     top && height ? `${top - height}px` : "491.515625px"};
+
+  @media (max-width: 1249px) {
+    right: 3vw;
+    right: calc(var(--vw, 1vw) * 3);
+    top: ${({ top, height }) =>
+      top && height ? `${top - height}px` : "470px"};
+  }
 `;
 
 const Header = styled.div`
@@ -68,6 +75,12 @@ const Header = styled.div`
   /* padding-bottom: 4px; */
   padding-bottom: 0.208vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.208);
+
+  @media (max-width: 1249px) {
+    font-size: 1vw;
+    font-size: calc(var(--vw, 1vw) * 1);
+    padding-bottom: 0vw;
+  }
 `;
 
 const SectionTag = styled(Header)`
@@ -78,6 +91,13 @@ const SectionTag = styled(Header)`
   /* top: 4.512px; */
   top: 0.475vh;
   top: calc(var(--vh, 1vh) * 0.475);
+
+  @media (max-width: 1249px) {
+    left: -1.5vw;
+    left: calc(var(--vw, 1vw) * -1.5);
+    top: 0.3vh;
+    top: calc(var(--vh, 1vh) * 0.3);
+  }
 `;
 
 const NavLink = styled.a`
@@ -89,6 +109,11 @@ const NavLink = styled.a`
   font-size: calc(var(--vw, 1vw) * 1.25);
   text-transform: uppercase;
   position: relative;
+
+  @media (max-width: 1249px) {
+    font-size: 1.7vw;
+    font-size: calc(var(--vw, 1vw) * 1.7);
+  }
 
   :hover {
     color: #00ff29;

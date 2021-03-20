@@ -64,6 +64,13 @@ const Wrapper = styled.div`
   line-height: 7.395vw;
   line-height: calc(var(--vw, 1vw) * 7.395);
   /* text-align: left; */
+
+  @media (max-width: 1249px) {
+    font-size: 9.395vw;
+    font-size: calc(var(--vw, 1vw) * 9.395);
+    line-height: 9.395vw;
+    line-height: calc(var(--vw, 1vw) * 9.395);
+  }
 `;
 
 const BetaTag = styled.span`
@@ -75,6 +82,10 @@ const BetaTag = styled.span`
   /* margin-left: -32px; */
   /* margin-left: -0.1vw;
   margin-left: calc(var(--vw, 1vw) * -0.1); */
+  @media (max-width: 1249px) {
+    font-size: 1.3vw;
+    font-size: calc(var(--vw, 1vw) * 1.3);
+  }
 `;
 
 export default Header;
