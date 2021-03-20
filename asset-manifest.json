@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/degrowth/static/css/main.c85103df.chunk.css",
+    "main.js": "/degrowth/static/js/main.ffd73fdc.chunk.js",
+    "main.js.map": "/degrowth/static/js/main.ffd73fdc.chunk.js.map",
+    "runtime-main.js": "/degrowth/static/js/runtime-main.f42e2f30.js",
+    "runtime-main.js.map": "/degrowth/static/js/runtime-main.f42e2f30.js.map",
+    "static/js/2.bbeef3d9.chunk.js": "/degrowth/static/js/2.bbeef3d9.chunk.js",
+    "static/js/2.bbeef3d9.chunk.js.map": "/degrowth/static/js/2.bbeef3d9.chunk.js.map",
+    "index.html": "/degrowth/index.html",
+    "static/css/main.c85103df.chunk.css.map": "/degrowth/static/css/main.c85103df.chunk.css.map",
+    "static/js/2.bbeef3d9.chunk.js.LICENSE.txt": "/degrowth/static/js/2.bbeef3d9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/degrowth/static/media/SuisseIntl-Regular.f3d38b20.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f42e2f30.js",
+    "static/js/2.bbeef3d9.chunk.js",
+    "static/css/main.c85103df.chunk.css",
+    "static/js/main.ffd73fdc.chunk.js"
+  ]
+}
