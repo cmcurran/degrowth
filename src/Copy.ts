@@ -216,6 +216,35 @@ const degrowth = {
         ],
       },
     },
+    {
+      header: { section: "c1", title: "contribute" },
+      body: {
+        variant: "shareButton",
+        copy: {
+          body: `The aim of The Degrowth Toolbox for Artistic Practices is to become a fully open source publication and resource. Currently, you are invited to contribute with your comments, questions, ideas, references, and experiences through the link below`,
+          button: {
+            copy: "Contribute",
+            url: "https://www.google.com",
+          },
+        },
+      },
+    },
+    {
+      header: { section: "d1", title: "download" },
+      body: {
+        variant: "download",
+        copy: [
+          {
+            copy: "thedegrowthtoolboxforartisticpractices.pdf",
+            url: "sample.pdf",
+          },
+          {
+            copy: "thedegrowthtoolboxforartisticpractices.epub",
+            url: "sample.pdf",
+          },
+        ],
+      },
+    },
   ],
 };
 

@@ -9,7 +9,13 @@ const SectionWithHeader = ({
   section: string;
   header: string;
   body: any;
-  variant: "xl" | "paragraph" | "glossary" | "link";
+  variant:
+    | "xl"
+    | "paragraph"
+    | "glossary"
+    | "link"
+    | "shareButton"
+    | "download";
 }) => (
   <Wrapper>
     <HeaderWrapper id={header}>
@@ -52,8 +58,59 @@ const SectionWithHeader = ({
         )}
       </ColumnInnerWrapper>
     )}
+
+    {variant === "shareButton" && (
+      <ColumnInnerWrapper>
+        <Body>{body.body}</Body>
+        <ButtonLink href={body.button.url} target="_blank">
+          {body.button.copy}
+        </ButtonLink>
+      </ColumnInnerWrapper>
+    )}
+
+    {variant === "download" && (
+      <ColumnInnerWrapper>
+        {body.map((item: { copy: string; url: string }, i: number) => (
+          <ButtonLink key={i} href={item.url} download>
+            {item.copy}
+          </ButtonLink>
+        ))}
+      </ColumnInnerWrapper>
+    )}
   </Wrapper>
 );
+
+const ButtonLink = styled.a`
+  font-family: "MG Mono";
+  color: #00ff29;
+  text-decoration: none;
+  font-size: 1.458vw;
+  font-size: calc(var(--vw, 1vw) * 1.458);
+  border: 1px solid #00ff29;
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  :hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 549px) {
+    font-size: 5vw;
+    font-size: calc(var(--vw, 1vw) * 5);
+  }
+
+  @media (min-width: 550px) and (max-width: 749px) {
+    font-size: 2.9vw;
+    font-size: calc(var(--vw, 1vw) * 2.9);
+  }
+
+  @media (min-width: 750px) and (max-width: 1249px) {
+    font-size: 1.9vw;
+    font-size: calc(var(--vw, 1vw) * 1.9);
+  }
+`;
 
 const BibliographyLink = styled.a<{ variant?: "noLink" }>`
   font-family: "Suisse";

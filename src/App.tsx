@@ -53,7 +53,9 @@ const App = () => {
               section.body.variant !== "xl" &&
               section.body.variant !== "paragraph" &&
               section.body.variant !== "glossary" &&
-              section.body.variant !== "link"
+              section.body.variant !== "link" &&
+              section.body.variant !== "shareButton" &&
+              section.body.variant !== "download"
             ) {
               return;
             }
