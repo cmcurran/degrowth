@@ -17,6 +17,8 @@ import { useScrollPosition } from "./UseScrollPosition.js";
 
 //hover [1]
 
+//turn off scroll position on larger screens
+
 const App = () => {
   const [betaBottom, setBetaBottom] = useState<number | null>(null);
   const [hideOnScroll, setHideOnScroll] = useState(true);
@@ -40,9 +42,12 @@ const App = () => {
           show={hideOnScroll}
         />
 
+        <Header
+          text={Degrowth.header}
+          navContent={Degrowth.nav}
+          setBetaBottom={setBetaBottom}
+        />
         <InnerWrapper>
-          <Header text={Degrowth.header} setBetaBottom={setBetaBottom} />
-
           {Degrowth.sections.map((section, i) => {
             if (
               section.body.variant !== "xl" &&
@@ -65,7 +70,7 @@ const App = () => {
         </InnerWrapper>
       </Wrapper>
     ),
-    [hideOnScroll]
+    [hideOnScroll, betaBottom]
   );
 };
 

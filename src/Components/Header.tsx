@@ -5,13 +5,16 @@ import React, {
   SetStateAction,
 } from "react";
 import styled from "styled-components";
+import { NavLarge } from "./Nav";
 
 const Header = ({
   text,
   setBetaBottom,
+  navContent,
 }: {
   text: string[];
   setBetaBottom: Dispatch<SetStateAction<number | null>>;
+  navContent: { section: string; title: string }[];
 }) => {
   const betaRef = useRef<HTMLSpanElement>(null);
 
@@ -42,11 +45,21 @@ const Header = ({
 
   return (
     <OuterWrapper>
+      {" "}
       {text.map((item, i) => (
-        <Wrapper key={item}>
-          {item}
-          {i === text.length - 1 && <BetaTag ref={betaRef}>beta</BetaTag>}
-        </Wrapper>
+        <InnerWrapper>
+          <Wrapper key={item}>
+            {item}
+            {i === text.length - 1 && <BetaTag ref={betaRef}>beta</BetaTag>}
+          </Wrapper>
+          {i === text.length - 1 && (
+            <div style={{ position: "relative" }}>
+              <div style={{ position: "absolute", top: "-94%" }}>
+                <NavLarge content={navContent} />
+              </div>
+            </div>
+          )}
+        </InnerWrapper>
       ))}
     </OuterWrapper>
   );
@@ -54,10 +67,20 @@ const Header = ({
 
 const OuterWrapper = styled.div`
   height: 100vh;
+  min-height: 750px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+`;
+
+const InnerWrapper = styled.div`
+  display: flex;
+
+  /* align-items: center;
+  flex-direction: column;*/
+  justify-content: center;
+  width: 65%;
 `;
 
 const Wrapper = styled.div`

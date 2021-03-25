@@ -11,35 +11,35 @@ const Nav = ({
   betaBottom: number | null;
   show: boolean;
 }) => {
-  const [height, setHeight] = useState<number | null>(null);
-  const wrapperRef = useRef<HTMLDivElement>(null);
+  // const [height, setHeight] = useState<number | null>(null);
+  // const wrapperRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
-    if (!window) {
-      return;
-    }
-    const handleResize = () => {
-      if (wrapperRef.current === null) {
-        return;
-      }
-      setHeight(wrapperRef.current.getBoundingClientRect().height);
-    };
+  // useLayoutEffect(() => {
+  //   if (!window) {
+  //     return;
+  //   }
+  //   const handleResize = () => {
+  //     if (wrapperRef.current === null) {
+  //       return;
+  //     }
+  //     setHeight(wrapperRef.current.getBoundingClientRect().height);
+  //   };
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [wrapperRef]);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [wrapperRef]);
 
   return (
     <>
       <NavSmall content={content} show={show} />
-      <NavLarge
+      {/* <NavLarge
         betaBottom={betaBottom}
         height={height}
         wrapperRef={wrapperRef}
         content={content}
-      />
+      /> */}
     </>
   );
 };
@@ -90,21 +90,23 @@ const NavSmall = ({
   );
 };
 
-const NavLarge = ({
-  betaBottom,
-  height,
-  wrapperRef,
+export const NavLarge = ({
+  // betaBottom,
+  // height,
+  // wrapperRef,
   content,
 }: {
-  betaBottom: number | null;
-  height: number | null;
-  wrapperRef: React.RefObject<HTMLDivElement>;
+  // betaBottom: number | null;
+  // height: number | null;
+  // wrapperRef: React.RefObject<HTMLDivElement>;
   content: {
     section: string;
     title: string;
   }[];
 }) => (
-  <Wrapper top={betaBottom} height={height} ref={wrapperRef}>
+  <Wrapper
+  // top={betaBottom} height={height} ref={wrapperRef}
+  >
     <Header>nav</Header>
 
     {content.map((item) => (
@@ -176,19 +178,19 @@ const IconWrapper = styled.div<{ show: boolean }>`
   }
 `;
 
-const Wrapper = styled.div<{ top: number | null; height: number | null }>`
+const Wrapper = styled.div<{ top?: number | null; height?: number | null }>`
   display: flex;
   flex-direction: column;
   position: fixed;
   /* right: 350px;
   top: 430px; */
-  right: 18.229vw;
-  right: calc(var(--vw, 1vw) * 18.229);
+  /* right: 18.229vw;
+  right: calc(var(--vw, 1vw) * 18.229); */
   /* top: 45.31vh;
   top: calc(var(--vh, 1vh) * 45.31); */
-  top: ${({ top, height }) =>
-    top && height ? `${top - height}px` : "491.515625px"};
-
+  /* top: ${({ top, height }) =>
+    top && height ? `${top - height}px` : "52%"}; */
+  /* "491.515625px" */
   @media (max-width: 749px) {
     display: none;
   }
