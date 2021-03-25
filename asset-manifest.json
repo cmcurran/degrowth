@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/degrowthtoolbox.net/static/css/main.dc3e7609.chunk.css",
-    "main.js": "/degrowthtoolbox.net/static/js/main.f070033d.chunk.js",
-    "main.js.map": "/degrowthtoolbox.net/static/js/main.f070033d.chunk.js.map",
-    "runtime-main.js": "/degrowthtoolbox.net/static/js/runtime-main.e6c86181.js",
-    "runtime-main.js.map": "/degrowthtoolbox.net/static/js/runtime-main.e6c86181.js.map",
-    "static/js/2.fd774ba7.chunk.js": "/degrowthtoolbox.net/static/js/2.fd774ba7.chunk.js",
-    "static/js/2.fd774ba7.chunk.js.map": "/degrowthtoolbox.net/static/js/2.fd774ba7.chunk.js.map",
-    "index.html": "/degrowthtoolbox.net/index.html",
-    "static/css/main.dc3e7609.chunk.css.map": "/degrowthtoolbox.net/static/css/main.dc3e7609.chunk.css.map",
-    "static/js/2.fd774ba7.chunk.js.LICENSE.txt": "/degrowthtoolbox.net/static/js/2.fd774ba7.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/degrowthtoolbox.net/static/media/SuisseIntl-Regular.f3d38b20.otf"
+    "main.css": "/static/css/main.f533efe7.chunk.css",
+    "main.js": "/static/js/main.f070033d.chunk.js",
+    "main.js.map": "/static/js/main.f070033d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8c33e838.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8c33e838.js.map",
+    "static/js/2.f39c0647.chunk.js": "/static/js/2.f39c0647.chunk.js",
+    "static/js/2.f39c0647.chunk.js.map": "/static/js/2.f39c0647.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f533efe7.chunk.css.map": "/static/css/main.f533efe7.chunk.css.map",
+    "static/js/2.f39c0647.chunk.js.LICENSE.txt": "/static/js/2.f39c0647.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/SuisseIntl-Regular.f3d38b20.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.e6c86181.js",
-    "static/js/2.fd774ba7.chunk.js",
-    "static/css/main.dc3e7609.chunk.css",
+    "static/js/runtime-main.8c33e838.js",
+    "static/js/2.f39c0647.chunk.js",
+    "static/css/main.f533efe7.chunk.css",
     "static/js/main.f070033d.chunk.js"
   ]
 }
