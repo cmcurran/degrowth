@@ -70,16 +70,50 @@ const SectionWithHeader = ({
     )}
 
     {variant === "download" && (
-      <ColumnInnerWrapper>
-        {body.map((item: { copy: string; url: string }, i: number) => (
-          <ButtonLink key={i} href={item.url} download>
-            {item.copy}
-          </ButtonLink>
-        ))}
-      </ColumnInnerWrapper>
+      <>
+        <HiddenMobile>
+          <ColumnInnerWrapper>
+            {body.map((item: { copy: string; url: string }, i: number) => (
+              <ButtonLink key={i} href={item.url} download>
+                {item.copy}
+              </ButtonLink>
+            ))}
+          </ColumnInnerWrapper>
+        </HiddenMobile>
+
+        <HiddenDesktop>
+          <ColumnInnerWrapper>
+            {body.map(
+              (
+                item: { copy: string; copyShort: string; url: string },
+                i: number
+              ) => (
+                <ButtonLink key={i} href={item.url} download>
+                  {item.copyShort}
+                </ButtonLink>
+              )
+            )}
+          </ColumnInnerWrapper>
+        </HiddenDesktop>
+      </>
     )}
   </Wrapper>
 );
+
+const HiddenMobile = styled.div`
+  display: none;
+
+  @media (min-width: 750px) {
+    display: block;
+  }
+`;
+
+const HiddenDesktop = styled.div`
+  display: none;
+  @media (max-width: 749px) {
+    display: block;
+  }
+`;
 
 const ButtonLink = styled.a`
   font-family: "MG Mono";

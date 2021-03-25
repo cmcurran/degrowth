@@ -19,6 +19,8 @@ import { useScrollPosition } from "./UseScrollPosition.js";
 
 //turn off scroll position on larger screens
 
+//download link widths need to be the same
+
 const App = () => {
   const [betaBottom, setBetaBottom] = useState<number | null>(null);
   const [hideOnScroll, setHideOnScroll] = useState(true);
