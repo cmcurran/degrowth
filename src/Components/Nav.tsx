@@ -5,9 +5,11 @@ import { IconHamburger, IconX } from "./NavIcons";
 const Nav = ({
   content,
   betaBottom,
+  show,
 }: {
   content: { section: string; title: string }[];
   betaBottom: number | null;
+  show: boolean;
 }) => {
   const [height, setHeight] = useState<number | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);

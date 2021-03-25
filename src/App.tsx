@@ -1,48 +1,72 @@
 import logo from "./logo.svg";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import styled from "styled-components";
 import Header from "./Components/Header";
 import SectionWithHeader from "./Components/SectionWithHeader";
 import Nav from "./Components/Nav";
 import Degrowth from "./Copy";
+// import { useScrollPosition } from "./UseScrollPosition";
 
 //TODO debounce window listeners?
 
 // if on small view and nav open -> resize over 750 px -> setOpen(false)
 
+//desktop nav loads in too low
+
+//nav text same size as main body text
+
 //hover [1]
 
 const App = () => {
   const [betaBottom, setBetaBottom] = useState<number | null>(null);
+  const [hideOnScroll, setHideOnScroll] = useState(true);
 
-  return (
-    <Wrapper>
-      <Nav content={Degrowth.nav} betaBottom={betaBottom} />
+  // useScrollPosition(
+  //   ({ prevPos, currPos }) => {
+  //     const isShow = currPos.y > prevPos.y;
+  //     if (isShow !== hideOnScroll) setHideOnScroll(isShow);
+  //   },
+  //   [hideOnScroll],
+  //   false,
+  //   false,
+  //   300
+  // );
 
-      <InnerWrapper>
-        <Header text={Degrowth.header} setBetaBottom={setBetaBottom} />
+  return useMemo(
+    () => (
+      <Wrapper>
+        <Nav
+          content={Degrowth.nav}
+          betaBottom={betaBottom}
+          show={hideOnScroll}
+        />
 
-        {Degrowth.sections.map((section, i) => {
-          if (
-            section.body.variant !== "xl" &&
-            section.body.variant !== "paragraph" &&
-            section.body.variant !== "glossary" &&
-            section.body.variant !== "link"
-          ) {
-            return;
-          }
-          return (
-            <SectionWithHeader
-              key={i}
-              section={section.header.section}
-              header={section.header.title}
-              variant={section.body.variant}
-              body={section.body.copy}
-            />
-          );
-        })}
-      </InnerWrapper>
-    </Wrapper>
+        <InnerWrapper>
+          <Header text={Degrowth.header} setBetaBottom={setBetaBottom} />
+
+          {Degrowth.sections.map((section, i) => {
+            if (
+              section.body.variant !== "xl" &&
+              section.body.variant !== "paragraph" &&
+              section.body.variant !== "glossary" &&
+              section.body.variant !== "link"
+            ) {
+              return;
+            }
+            return (
+              <SectionWithHeader
+                key={i}
+                section={section.header.section}
+                header={section.header.title}
+                variant={section.body.variant}
+                body={section.body.copy}
+              />
+            );
+          })}
+        </InnerWrapper>
+      </Wrapper>
+    ),
+    []
   );
 };
 
