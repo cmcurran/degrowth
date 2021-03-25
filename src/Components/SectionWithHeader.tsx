@@ -15,7 +15,8 @@ const SectionWithHeader = ({
     | "glossary"
     | "link"
     | "shareButton"
-    | "download";
+    | "download"
+    | string;
 }) => (
   <Wrapper>
     <HeaderWrapper id={header}>

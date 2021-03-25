@@ -245,6 +245,18 @@ const degrowth = {
         ],
       },
     },
+    {
+      header: { section: "e1", title: "colophon" },
+      body: {
+        variant: "paragraph",
+        copy: [
+          `Written by My Very Smart Girlfriend`,
+          `Built by one cute motherfucker`,
+          `2021`,
+          `THE LICENSE YEET`,
+        ],
+      },
+    },
   ],
 };
 

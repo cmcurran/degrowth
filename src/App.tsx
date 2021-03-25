@@ -49,16 +49,6 @@ const App = () => {
         />
         <InnerWrapper>
           {Degrowth.sections.map((section, i) => {
-            if (
-              section.body.variant !== "xl" &&
-              section.body.variant !== "paragraph" &&
-              section.body.variant !== "glossary" &&
-              section.body.variant !== "link" &&
-              section.body.variant !== "shareButton" &&
-              section.body.variant !== "download"
-            ) {
-              return;
-            }
             return (
               <SectionWithHeader
                 key={i}
