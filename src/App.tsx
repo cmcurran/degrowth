@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import SectionWithHeader from "./Components/SectionWithHeader";
 import Nav from "./Components/Nav";
 import Degrowth from "./Copy";
-// import { useScrollPosition } from "./UseScrollPosition";
+import { useScrollPosition } from "./UseScrollPosition.js";
 
 //TODO debounce window listeners?
 
@@ -20,21 +20,20 @@ import Degrowth from "./Copy";
 const App = () => {
   const [betaBottom, setBetaBottom] = useState<number | null>(null);
   const [hideOnScroll, setHideOnScroll] = useState(true);
-
-  // useScrollPosition(
-  //   ({ prevPos, currPos }) => {
-  //     const isShow = currPos.y > prevPos.y;
-  //     if (isShow !== hideOnScroll) setHideOnScroll(isShow);
-  //   },
-  //   [hideOnScroll],
-  //   false,
-  //   false,
-  //   300
-  // );
+  useScrollPosition(
+    ({ prevPos, currPos }: { prevPos: any; currPos: any }) => {
+      const isShow = currPos.y > prevPos.y;
+      if (isShow !== hideOnScroll) setHideOnScroll(isShow);
+    },
+    [hideOnScroll],
+    false,
+    false,
+    300
+  );
 
   return useMemo(
     () => (
-      <Wrapper>
+      <Wrapper onClick={() => setHideOnScroll(true)}>
         <Nav
           content={Degrowth.nav}
           betaBottom={betaBottom}
@@ -66,7 +65,7 @@ const App = () => {
         </InnerWrapper>
       </Wrapper>
     ),
-    []
+    [hideOnScroll]
   );
 };
 

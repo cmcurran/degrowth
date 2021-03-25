@@ -33,7 +33,7 @@ const Nav = ({
 
   return (
     <>
-      <NavSmall content={content} />
+      <NavSmall content={content} show={show} />
       <NavLarge
         betaBottom={betaBottom}
         height={height}
@@ -46,18 +46,20 @@ const Nav = ({
 
 const NavSmall = ({
   content,
+  show,
 }: {
   content: {
     section: string;
     title: string;
   }[];
+  show: boolean;
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <>
       {!isOpen && (
-        <IconWrapper onClick={() => setIsOpen(true)}>
+        <IconWrapper onClick={() => setIsOpen(true)} show={show}>
           <IconHamburger />
         </IconWrapper>
       )}
@@ -77,7 +79,7 @@ const NavSmall = ({
             ))}
           </NavWrapperSmall>
         </InnerWrapperSmall>
-        <IconWrapper onClick={() => setIsOpen(false)}>
+        <IconWrapper onClick={() => setIsOpen(false)} show={true}>
           <IconX />
         </IconWrapper>
       </WrapperSmall>
@@ -147,11 +149,15 @@ const NavWrapperSmall = styled.div`
   flex-direction: column;
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.div<{ show: boolean }>`
   /* background-color: magenta; */
   background-color: black;
   position: fixed;
   cursor: pointer;
+
+  visibility: ${(props) => (props.show ? "visible" : "hidden")};
+  transition: all 200ms ${(props) => (props.show ? "ease-in" : "ease-out")};
+  transform: ${(props) => (props.show ? "none" : "translate(100%, 0)")};
 
   top: 6.1vw;
   top: calc(var(--vw, 1vw) * 6.1);
