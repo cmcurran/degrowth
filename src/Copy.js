@@ -43,6 +43,7 @@ const degrowth = {
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScQg84c6XIV4i01dVIgGI3RDR7O82iNsJ9bP5MCdqPiP5DftA/viewform"
               target="_blank"
+              rel="noopener noreferrer"
             >
               this link
             </a>{" "}
@@ -1327,13 +1328,21 @@ const degrowth = {
           "Special thanks to Reyhaneh Mirjahani.",
           <>
             Made during the 1st{" "}
-            <a href="https://wendy.network/" target="_blank">
+            <a
+              href="https://wendy.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               wendy.network
             </a>{" "}
             virtual residency, March 2021.
           </>,
           <>
-            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <a
+              rel="license"
+              href="http://creativecommons.org/licenses/by/4.0/"
+              target="_blank"
+            >
               <img
                 alt="Creative Commons License"
                 style={{ borderWidth: "0" }}
