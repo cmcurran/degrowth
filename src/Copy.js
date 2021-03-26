@@ -40,7 +40,10 @@ const degrowth = {
             impossible after all. You are invited to participate in building the
             toolbox with your comments, questions, corrections, ideas and
             contributions through{" "}
-            <a href="https://forms.gle/DrAZyDSPmpAWhmcGA" target="_blank">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScQg84c6XIV4i01dVIgGI3RDR7O82iNsJ9bP5MCdqPiP5DftA/viewform"
+              target="_blank"
+            >
               this link
             </a>{" "}
             which you will also find further down this page.
@@ -1291,7 +1294,7 @@ const degrowth = {
           button: {
             copy: "Contribute",
             url:
-              "https://forms.gle/DrAZyDSPmpAWhmcGA&sa=D&source=editors&ust=1616586679010000&usg=AOvVaw3XGvZdcRzgpOJ0vxDSRmKS",
+              "https://docs.google.com/forms/d/e/1FAIpQLScQg84c6XIV4i01dVIgGI3RDR7O82iNsJ9bP5MCdqPiP5DftA/viewform",
           },
         },
       },
@@ -1344,7 +1347,7 @@ const degrowth = {
               href="http://creativecommons.org/licenses/by/4.0/"
               target="_blank"
             >
-              Creative Commons Attribution 4.0 International License
+              Creative Commons Attribution 4.0 International License.
             </a>
           </>,
         ],
