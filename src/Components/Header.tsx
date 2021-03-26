@@ -59,17 +59,26 @@ const Header = ({
             )}
           </Wrapper>
           {i === text.length - 1 && (
-            <div style={{ position: "relative" }}>
-              <div style={{ position: "absolute", top: "-94%" }}>
+            <NavOuterWrapper>
+              <NavInnerWrapper>
                 <NavLarge content={navContent} />
-              </div>
-            </div>
+              </NavInnerWrapper>
+            </NavOuterWrapper>
           )}
         </InnerWrapper>
       ))}
     </OuterWrapper>
   );
 };
+
+const NavOuterWrapper = styled.div`
+  position: relative;
+`;
+
+const NavInnerWrapper = styled.div`
+  position: absolute;
+  top: -120%;
+`;
 
 const OuterWrapper = styled.div`
   height: 100vh;
