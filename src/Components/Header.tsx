@@ -47,16 +47,10 @@ const Header = ({
     <OuterWrapper>
       {" "}
       {text.map((item, i) => (
-        <InnerWrapper>
-          <Wrapper key={item}>
+        <InnerWrapper key={`HeaderRow${i}`}>
+          <Wrapper>
             {item}
-            {i === text.length - 1 && (
-              <BetaTag
-              // ref={betaRef}
-              >
-                beta
-              </BetaTag>
-            )}
+            {i === text.length - 1 && <BetaTag>beta</BetaTag>}
           </Wrapper>
           {i === text.length - 1 && (
             <NavOuterWrapper>

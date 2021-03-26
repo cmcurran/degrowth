@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Header from "./Components/Header";
 import SectionWithHeader from "./Components/SectionWithHeader";
 import Nav from "./Components/Nav";
-import Degrowth from "./Copy";
+import Degrowth from "./Copy.js";
 import { useScrollPosition } from "./UseScrollPosition.js";
 
 //TODO debounce window listeners?
@@ -47,7 +47,7 @@ const App = () => {
           {Degrowth.sections.map((section, i) => {
             return (
               <SectionWithHeader
-                key={i}
+                key={`SectionWithHeader${i}`}
                 section={section.header.section}
                 header={section.header.title}
                 variant={section.body.variant}

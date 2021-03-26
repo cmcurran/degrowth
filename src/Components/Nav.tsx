@@ -67,10 +67,10 @@ const NavSmall = ({
         <InnerWrapperSmall>
           <NavWrapperSmall>
             <Header>nav</Header>
-            {content.map((item) => (
+            {content.map((item, i) => (
               <NavLink
                 href={`#${item.title}`}
-                key={item.title}
+                key={`NavLink${i}`}
                 onClick={() => setIsOpen(false)}
               >
                 <SectionTag>{item.section}</SectionTag>
@@ -109,8 +109,8 @@ export const NavLarge = ({
   >
     <Header>nav</Header>
 
-    {content.map((item) => (
-      <NavLink href={`#${item.title}`} key={item.title}>
+    {content.map((item, i) => (
+      <NavLink href={`#${item.title}`} key={`NavLinkLarge${i}`}>
         <SectionTag>{item.section}</SectionTag>
         {item.title}
       </NavLink>

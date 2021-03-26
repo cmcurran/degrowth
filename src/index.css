@@ -10,9 +10,35 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "SuisseBold";
+  src: local("SuisseBold"), url(./fonts/SuisseIntl-Bold.otf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SuisseItalic";
+  src: local("SuisseBold"),
+    url(./fonts/SuisseIntl-RegularItalic.otf) format("truetype");
+  font-weight: 400;
+}
+
 /* THAT GREEN 00FF29 */
 html {
   scroll-behavior: smooth;
+}
+
+em,
+i {
+  font-family: "SuisseItalic";
+  font-style: normal;
+  font-weight: 400;
+}
+
+strong {
+  font-family: "SuisseBold";
+  font-style: normal;
+  font-weight: 400;
 }
 
 * {

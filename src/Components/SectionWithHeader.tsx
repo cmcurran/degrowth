@@ -27,9 +27,9 @@ const SectionWithHeader = ({
     {(variant === "xl" || variant === "paragraph") &&
       body.map((item: string, i: number) =>
         variant === "xl" ? (
-          <BodyXL key={i}>{item}</BodyXL>
+          <BodyXL key={`${section}${i}`}>{item}</BodyXL>
         ) : (
-          <Body key={i}>{item}</Body>
+          <Body key={`${section}${i}`}>{item}</Body>
         )
       )}
 
@@ -48,11 +48,19 @@ const SectionWithHeader = ({
       <ColumnInnerWrapper>
         {body.map((item: { text: string; url?: string }, i: number) =>
           item.url ? (
-            <BibliographyLink href={item.url} target="_blank" key={item.text}>
+            <BibliographyLink
+              href={item.url}
+              target="_blank"
+              key={`bibliography${i}`}
+            >
               {item.text}
             </BibliographyLink>
           ) : (
-            <BibliographyLink as="div" variant="noLink" key={item.text}>
+            <BibliographyLink
+              as="div"
+              variant="noLink"
+              key={`bibliography${i}`}
+            >
               {item.text}
             </BibliographyLink>
           )
@@ -74,7 +82,12 @@ const SectionWithHeader = ({
         <HiddenMobile>
           <ColumnInnerWrapper>
             {body.map((item: { copy: string; url: string }, i: number) => (
-              <ButtonLink key={i} href={item.url} download fullWidth={true}>
+              <ButtonLink
+                key={`DesktopDownload${i}`}
+                href={item.url}
+                download
+                fullWidth={true}
+              >
                 {item.copy}
               </ButtonLink>
             ))}
@@ -88,7 +101,12 @@ const SectionWithHeader = ({
                 item: { copy: string; copyShort: string; url: string },
                 i: number
               ) => (
-                <ButtonLink key={i} href={item.url} download fullWidth={true}>
+                <ButtonLink
+                  key={`MobileDownload${i}`}
+                  href={item.url}
+                  download
+                  fullWidth={true}
+                >
                   {item.copyShort}
                 </ButtonLink>
               )
@@ -331,6 +349,10 @@ const Body = styled.div`
   /* padding-bottom: 32px; */
   padding-bottom: 1.666vw;
   padding-bottom: calc(var(--vw, 1vw) * 1.666);
+
+  > a {
+    color: #00ff29;
+  }
 
   @media (max-width: 549px) {
     font-size: 5vw;
