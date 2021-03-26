@@ -4,7 +4,7 @@ const degrowth = {
     { section: "a0", title: "purpose" },
     { section: "a1", title: "what is degrowth" },
     { section: "a2", title: "considerations" },
-    { section: "a3", title: "strategies" },
+    { section: "a3", title: "questions" },
     { section: "b1", title: "glossary" },
     { section: "b2", title: "bibliography" },
     { section: "c1", title: "contribute" },
