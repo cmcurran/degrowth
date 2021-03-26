@@ -1308,12 +1308,12 @@ const degrowth = {
           {
             copy: "thedegrowthtoolboxforartisticpractices.pdf",
             copyShort: ".pdf",
-            url: "sample.pdf",
+            url: "thedegrowthtoolboxforartisticpractices.pdf",
           },
           {
             copy: "thedegrowthtoolboxforartisticpractices.epub",
             copyShort: ".epub",
-            url: "sample.pdf",
+            url: "thedegrowthtoolboxforartisticpractices.epub",
           },
         ],
       },
