@@ -11,18 +11,12 @@ import { useScrollPosition } from "./UseScrollPosition.js";
 
 // if on small view and nav open -> resize over 750 px -> setOpen(false)
 
-//desktop nav loads in too low
-
-//nav text same size as main body text
-
 //hover [1]
 
 //turn off scroll position on larger screens
 
-//download link widths need to be the same
-
 const App = () => {
-  const [betaBottom, setBetaBottom] = useState<number | null>(null);
+  // const [betaBottom, setBetaBottom] = useState<number | null>(null);
   const [hideOnScroll, setHideOnScroll] = useState(true);
   useScrollPosition(
     ({ prevPos, currPos }: { prevPos: any; currPos: any }) => {
@@ -40,14 +34,14 @@ const App = () => {
       <Wrapper onClick={() => setHideOnScroll(true)}>
         <Nav
           content={Degrowth.nav}
-          betaBottom={betaBottom}
+          // betaBottom={betaBottom}
           show={hideOnScroll}
         />
 
         <Header
           text={Degrowth.header}
           navContent={Degrowth.nav}
-          setBetaBottom={setBetaBottom}
+          // setBetaBottom={setBetaBottom}
         />
         <InnerWrapper>
           {Degrowth.sections.map((section, i) => {
@@ -64,7 +58,10 @@ const App = () => {
         </InnerWrapper>
       </Wrapper>
     ),
-    [hideOnScroll, betaBottom]
+    [
+      hideOnScroll,
+      // , betaBottom
+    ]
   );
 };
 

@@ -4,11 +4,11 @@ import { IconHamburger, IconX } from "./NavIcons";
 
 const Nav = ({
   content,
-  betaBottom,
+  // betaBottom,
   show,
 }: {
   content: { section: string; title: string }[];
-  betaBottom: number | null;
+  // betaBottom: number | null;
   show: boolean;
 }) => {
   // const [height, setHeight] = useState<number | null>(null);
@@ -196,10 +196,10 @@ const Wrapper = styled.div<{ top?: number | null; height?: number | null }>`
   }
 
   @media (max-width: 1249px) {
-    right: 3vw;
+    /* right: 3vw;
     right: calc(var(--vw, 1vw) * 3);
     top: ${({ top, height }) =>
-      top && height ? `${top - height}px` : "470px"};
+      top && height ? `${top - height}px` : "470px"}; */
   }
 `;
 
@@ -259,10 +259,21 @@ const NavLink = styled.a`
   color: white;
   font-family: "Suisse";
   /* font-size: 24px; */
-  font-size: 1.25vw;
-  font-size: calc(var(--vw, 1vw) * 1.25);
   text-transform: uppercase;
   position: relative;
+
+  /* font-size: 1.25vw;
+  font-size: calc(var(--vw, 1vw) * 1.25);
+
+ 
+
+  @media (min-width: 750px) and (max-width: 1249px) {
+    font-size: 1.7vw;
+    font-size: calc(var(--vw, 1vw) * 1.7);
+  } */
+
+  font-size: 1.458vw;
+  font-size: calc(var(--vw, 1vw) * 1.458);
 
   @media (max-width: 749px) {
     font-size: 7vw;
@@ -270,10 +281,9 @@ const NavLink = styled.a`
   }
 
   @media (min-width: 750px) and (max-width: 1249px) {
-    font-size: 1.7vw;
-    font-size: calc(var(--vw, 1vw) * 1.7);
+    font-size: 1.9vw;
+    font-size: calc(var(--vw, 1vw) * 1.9);
   }
-
   :hover {
     color: #00ff29;
     text-decoration: underline;

@@ -236,12 +236,12 @@ const degrowth = {
         copy: [
           {
             copy: "thedegrowthtoolboxforartisticpractices.pdf",
-            copyShort: "pdf",
+            copyShort: ".pdf",
             url: "sample.pdf",
           },
           {
             copy: "thedegrowthtoolboxforartisticpractices.epub",
-            copyShort: "epub",
+            copyShort: ".epub",
             url: "sample.pdf",
           },
         ],

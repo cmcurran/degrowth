@@ -74,7 +74,7 @@ const SectionWithHeader = ({
         <HiddenMobile>
           <ColumnInnerWrapper>
             {body.map((item: { copy: string; url: string }, i: number) => (
-              <ButtonLink key={i} href={item.url} download>
+              <ButtonLink key={i} href={item.url} download fullWidth={true}>
                 {item.copy}
               </ButtonLink>
             ))}
@@ -88,7 +88,7 @@ const SectionWithHeader = ({
                 item: { copy: string; copyShort: string; url: string },
                 i: number
               ) => (
-                <ButtonLink key={i} href={item.url} download>
+                <ButtonLink key={i} href={item.url} download fullWidth={true}>
                   {item.copyShort}
                 </ButtonLink>
               )
@@ -115,7 +115,7 @@ const HiddenDesktop = styled.div`
   }
 `;
 
-const ButtonLink = styled.a`
+const ButtonLink = styled.a<{ fullWidth?: boolean }>`
   font-family: "MG Mono";
   color: #00ff29;
   text-decoration: none;
@@ -126,7 +126,7 @@ const ButtonLink = styled.a`
   padding: 1rem 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
+  text-align: center;
   :hover {
     text-decoration: underline;
   }
@@ -144,6 +144,15 @@ const ButtonLink = styled.a`
   @media (min-width: 750px) and (max-width: 1249px) {
     font-size: 1.9vw;
     font-size: calc(var(--vw, 1vw) * 1.9);
+  }
+
+  @media (max-width: 749px) {
+    width: ${({ fullWidth }) => fullWidth && "50%"};
+  }
+
+  @media (min-width: 750px) {
+    width: ${({ fullWidth }) => fullWidth && "95%"};
+    /* text-align: ${({ fullWidth }) => fullWidth && "center"}; */
   }
 `;
 

@@ -9,39 +9,39 @@ import { NavLarge } from "./Nav";
 
 const Header = ({
   text,
-  setBetaBottom,
+  // setBetaBottom,
   navContent,
 }: {
   text: string[];
-  setBetaBottom: Dispatch<SetStateAction<number | null>>;
+  // setBetaBottom: Dispatch<SetStateAction<number | null>>;
   navContent: { section: string; title: string }[];
 }) => {
-  const betaRef = useRef<HTMLSpanElement>(null);
+  // const betaRef = useRef<HTMLSpanElement>(null);
 
-  useLayoutEffect(() => {
-    if (!window) {
-      return;
-    }
-    const handleResize = () => {
-      if (betaRef.current === null) {
-        return;
-      }
+  // useLayoutEffect(() => {
+  //   if (!window) {
+  //     return;
+  //   }
+  //   const handleResize = () => {
+  //     if (betaRef.current === null) {
+  //       return;
+  //     }
 
-      const scrollTop =
-        window.pageYOffset ||
-        (document.documentElement || document.body.parentNode || document.body)
-          .scrollTop;
+  //     const scrollTop =
+  //       window.pageYOffset ||
+  //       (document.documentElement || document.body.parentNode || document.body)
+  //         .scrollTop;
 
-      if (scrollTop === 0) {
-        setBetaBottom(betaRef.current.getBoundingClientRect().bottom);
-      }
-    };
+  //     if (scrollTop === 0) {
+  //       setBetaBottom(betaRef.current.getBoundingClientRect().bottom);
+  //     }
+  //   };
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [betaRef]);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [betaRef]);
 
   return (
     <OuterWrapper>
@@ -50,7 +50,13 @@ const Header = ({
         <InnerWrapper>
           <Wrapper key={item}>
             {item}
-            {i === text.length - 1 && <BetaTag ref={betaRef}>beta</BetaTag>}
+            {i === text.length - 1 && (
+              <BetaTag
+              // ref={betaRef}
+              >
+                beta
+              </BetaTag>
+            )}
           </Wrapper>
           {i === text.length - 1 && (
             <div style={{ position: "relative" }}>
@@ -67,11 +73,15 @@ const Header = ({
 
 const OuterWrapper = styled.div`
   height: 100vh;
-  min-height: 750px;
+
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 750px) {
+    min-height: 750px;
+  }
 `;
 
 const InnerWrapper = styled.div`
@@ -81,6 +91,9 @@ const InnerWrapper = styled.div`
   flex-direction: column;*/
   justify-content: center;
   width: 65%;
+  @media (max-width: 1249px) {
+    width: 77%;
+  }
 `;
 
 const Wrapper = styled.div`
