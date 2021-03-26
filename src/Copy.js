@@ -885,7 +885,7 @@ const degrowth = {
                 147-69.
               </>
             ),
-            url: "http://www.jstor.org/stable/23460976.",
+            url: "https://www.jstor.org/stable/23460976?seq=1",
           },
           {
             text: (
