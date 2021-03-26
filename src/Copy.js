@@ -333,7 +333,7 @@ const degrowth = {
             Which should be closely followed by:
             <br />
             <i>Who benefits from this?</i> and,{" "}
-            <i>Has anyone asked for this?</i> or,
+            <i>Has anyone asked for this?</i> or,{" "}
             <i>Is this contributing to an ongoing discussion?</i> There is, of
             course, a multitude of possible answers to these questions and there
             isn’t one that is “more correct” than the others. The main objective
