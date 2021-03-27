@@ -19,17 +19,15 @@ const degrowth = {
         copy: [
           <>
             The purpose of this project is to formulate a conceptual framework
-            for creative and exhibitionary practices aimed towards{" "}
-            <strong>degrowth</strong>: composing a toolbox for art workers and
-            organisations interested in designing ethical and sustainable
-            creative practices during the pandemic and beyond.
+            for creative and exhibitionary practices aimed towards degrowth:
+            composing a toolbox for art workers and organisations interested in
+            designing ethical and sustainable creative practices during the
+            pandemic and beyond.
           </>,
           <>
             Degrowth is the idea that we need to construct our societies around
-            the values of <strong>well-being</strong>,{" "}
-            <strong>conviviality</strong>, <strong>autonomy</strong>,{" "}
-            <strong>sustainability</strong>, <strong>inclusion</strong>, and{" "}
-            <strong>care</strong>. These values come hand-in-hand with the
+            the values of well-being, conviviality, autonomy, sustainability,
+            inclusion, and care. These values come hand-in-hand with the
             rejection of the capitalist, authoritarian, patriarchal and colonial
             paradigms. The focus here is placed on formulating tools and
             strategies which are applicable in the arts.
