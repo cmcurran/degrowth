@@ -16,7 +16,6 @@ import { useScrollPosition } from "./UseScrollPosition.js";
 //turn off scroll position on larger screens
 
 const App = () => {
-  // const [betaBottom, setBetaBottom] = useState<number | null>(null);
   const [hideOnScroll, setHideOnScroll] = useState(true);
   useScrollPosition(
     ({ prevPos, currPos }: { prevPos: any; currPos: any }) => {
@@ -32,17 +31,9 @@ const App = () => {
   return useMemo(
     () => (
       <Wrapper onClick={() => setHideOnScroll(true)}>
-        <Nav
-          content={Degrowth.nav}
-          // betaBottom={betaBottom}
-          show={hideOnScroll}
-        />
+        <Nav content={Degrowth.nav} show={hideOnScroll} />
 
-        <Header
-          text={Degrowth.header}
-          navContent={Degrowth.nav}
-          // setBetaBottom={setBetaBottom}
-        />
+        <Header text={Degrowth.header} navContent={Degrowth.nav} />
         <InnerWrapper>
           {Degrowth.sections.map((section, i) => {
             return (
@@ -58,10 +49,7 @@ const App = () => {
         </InnerWrapper>
       </Wrapper>
     ),
-    [
-      hideOnScroll,
-      // , betaBottom
-    ]
+    [hideOnScroll]
   );
 };
 
@@ -73,8 +61,6 @@ const Wrapper = styled.div`
     padding-right: 10vw;
     padding-right: calc(var(--vw, 1vw) * 10);
   }
-
-  /* padding-top: 4vh; */
 
   width: 100%;
 `;

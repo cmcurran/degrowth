@@ -170,20 +170,17 @@ const ButtonLink = styled.a<{ fullWidth?: boolean }>`
 
   @media (min-width: 750px) {
     width: ${({ fullWidth }) => fullWidth && "95%"};
-    /* text-align: ${({ fullWidth }) => fullWidth && "center"}; */
   }
 `;
 
 const BibliographyLink = styled.a<{ variant?: "noLink" }>`
   font-family: "Suisse";
-  /* font-family: ${({ variant }) =>
-    variant === "noLink" ? "Suisse" : "MG Mono"}; */
-  /* font-size: 28px; */
+
   font-size: 1.458vw;
   font-size: calc(var(--vw, 1vw) * 1.458);
   color: white;
   text-decoration: none;
-  /* padding-bottom: 16px; */
+
   padding-bottom: 0.833vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
   text-decoration: ${({ variant }) => variant !== "noLink" && "underline"};
@@ -216,15 +213,14 @@ const BibliographyLink = styled.a<{ variant?: "noLink" }>`
     color: ${({ variant }) => variant !== "noLink" && "#00ff29"};
   }
 `;
-// line-height: 7.395vw;
-//   line-height: calc(var(--vw, 1vw) * 7.395);
+
 const GlossaryHeader = styled.div`
   font-family: "MG Mono";
   color: #00ff29;
-  /* font-size: 28px; */
+
   font-size: 1.458vw;
   font-size: calc(var(--vw, 1vw) * 1.458);
-  /* padding-bottom: 16px; */
+
   padding-bottom: 0.833vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.833);
 
@@ -253,7 +249,7 @@ const GlossaryHeader = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* padding-bottom: 96px; */
+
   padding-bottom: 5vw;
   padding-bottom: calc(var(--vw, 1vw) * 5);
 `;
@@ -267,7 +263,7 @@ const HeaderWrapper = styled.div`
   text-transform: uppercase;
   display: flex;
   align-items: flex-start;
-  /* padding-bottom: 64px; */
+
   padding-bottom: 3.333vw;
   padding-bottom: calc(var(--vw, 1vw) * 3.333);
 `;
@@ -275,13 +271,13 @@ const HeaderWrapper = styled.div`
 const Section = styled.span`
   font-family: "MG Mono";
   color: #00ff29;
-  /* font-size: 26px; */
+
   font-size: 1.354vw;
   font-size: calc(var(--vw, 1vw) * 1.354);
-  /* line-height: 47px; */
+
   line-height: 2.447vw;
   line-height: calc(var(--vw, 1vw) * 2.447);
-  /* padding-right: 12px; */
+
   padding-right: 0.625vw;
   padding-right: calc(var(--vw, 1vw) * 0.625);
 
@@ -340,13 +336,13 @@ const Header = styled.span`
     font-size: calc(var(--vw, 1vw) * 3.7);
   }
 `;
-/* font-size: ${({ variant }) => (variant === "xl" ? "36px" : "28px")}; */
+
 const Body = styled.div`
   font-family: "Suisse";
 
   font-size: 1.458vw;
   font-size: calc(var(--vw, 1vw) * 1.458);
-  /* padding-bottom: 32px; */
+
   padding-bottom: 1.666vw;
   padding-bottom: calc(var(--vw, 1vw) * 1.666);
 

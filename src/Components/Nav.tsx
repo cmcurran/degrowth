@@ -4,42 +4,16 @@ import { IconHamburger, IconX } from "./NavIcons";
 
 const Nav = ({
   content,
-  // betaBottom,
+
   show,
 }: {
   content: { section: string; title: string }[];
-  // betaBottom: number | null;
+
   show: boolean;
 }) => {
-  // const [height, setHeight] = useState<number | null>(null);
-  // const wrapperRef = useRef<HTMLDivElement>(null);
-
-  // useLayoutEffect(() => {
-  //   if (!window) {
-  //     return;
-  //   }
-  //   const handleResize = () => {
-  //     if (wrapperRef.current === null) {
-  //       return;
-  //     }
-  //     setHeight(wrapperRef.current.getBoundingClientRect().height);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, [wrapperRef]);
-
   return (
     <>
       <NavSmall content={content} show={show} />
-      {/* <NavLarge
-        betaBottom={betaBottom}
-        height={height}
-        wrapperRef={wrapperRef}
-        content={content}
-      /> */}
     </>
   );
 };
@@ -83,30 +57,19 @@ const NavSmall = ({
           <IconX />
         </IconWrapper>
       </WrapperSmall>
-      {/* {isOpen && (
-     
-      )} */}
     </>
   );
 };
 
 export const NavLarge = ({
-  // betaBottom,
-  // height,
-  // wrapperRef,
   content,
 }: {
-  // betaBottom: number | null;
-  // height: number | null;
-  // wrapperRef: React.RefObject<HTMLDivElement>;
   content: {
     section: string;
     title: string;
   }[];
 }) => (
-  <Wrapper
-  // top={betaBottom} height={height} ref={wrapperRef}
-  >
+  <Wrapper>
     <Header>nav</Header>
 
     {content.map((item, i) => (
@@ -152,7 +115,6 @@ const NavWrapperSmall = styled.div`
 `;
 
 const IconWrapper = styled.div<{ show: boolean }>`
-  /* background-color: magenta; */
   background-color: black;
   position: fixed;
   cursor: pointer;
@@ -182,24 +144,12 @@ const Wrapper = styled.div<{ top?: number | null; height?: number | null }>`
   display: flex;
   flex-direction: column;
   position: fixed;
-  /* right: 350px;
-  top: 430px; */
-  /* right: 18.229vw;
-  right: calc(var(--vw, 1vw) * 18.229); */
-  /* top: 45.31vh;
-  top: calc(var(--vh, 1vh) * 45.31); */
-  /* top: ${({ top, height }) =>
-    top && height ? `${top - height}px` : "52%"}; */
-  /* "491.515625px" */
+
   @media (max-width: 749px) {
     display: none;
   }
 
   @media (max-width: 1249px) {
-    /* right: 3vw;
-    right: calc(var(--vw, 1vw) * 3);
-    top: ${({ top, height }) =>
-      top && height ? `${top - height}px` : "470px"}; */
   }
 `;
 
@@ -207,10 +157,10 @@ const Header = styled.div`
   color: #00ff29;
   font-family: "MG Mono";
   text-transform: uppercase;
-  /* font-size: 12px; */
+
   font-size: 0.625vw;
   font-size: calc(var(--vw, 1vw) * 0.625);
-  /* padding-bottom: 4px; */
+
   padding-bottom: 0.208vw;
   padding-bottom: calc(var(--vw, 1vw) * 0.208);
 
@@ -228,10 +178,10 @@ const Header = styled.div`
 
 const SectionTag = styled(Header)`
   position: absolute;
-  /* left: -19.2px; */
+
   left: -1vw;
   left: calc(var(--vw, 1vw) * -1);
-  /* top: 4.512px; */
+
   top: 0.475vh;
   top: calc(var(--vh, 1vh) * 0.475);
 
@@ -258,19 +208,9 @@ const NavLink = styled.a`
   text-decoration: none;
   color: white;
   font-family: "Suisse";
-  /* font-size: 24px; */
+
   text-transform: uppercase;
   position: relative;
-
-  /* font-size: 1.25vw;
-  font-size: calc(var(--vw, 1vw) * 1.25);
-
- 
-
-  @media (min-width: 750px) and (max-width: 1249px) {
-    font-size: 1.7vw;
-    font-size: calc(var(--vw, 1vw) * 1.7);
-  } */
 
   font-size: 1.458vw;
   font-size: calc(var(--vw, 1vw) * 1.458);
