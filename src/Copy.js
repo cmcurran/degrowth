@@ -730,8 +730,7 @@ const degrowth = {
                 Tovar-Restrepo, Vivianne Ventura Dias, 2014.
               </>
             ),
-            url:
-              "https://www.academia.edu/15350437/A_Caring_and_Sustainable_Economy",
+            url: "https://www.academia.edu/15350437/A_Caring_and_Sustainable_Economy",
           },
           {
             text: (
@@ -752,8 +751,7 @@ const degrowth = {
                 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/an-economy-of-permanence-and-rethinking-value/",
+            url: "https://www.degrowth.info/en/catalogue-entry/an-economy-of-permanence-and-rethinking-value/",
           },
           {
             text: (
@@ -763,8 +761,7 @@ const degrowth = {
                 Will Bradley and Charles Esche (eds.), Tate Publishing, 2007.
               </>
             ),
-            url:
-              "http://www.thing.net/~rdom/ucsd/3somesPlus/ArtandSocialChange.pdf",
+            url: "http://www.thing.net/~rdom/ucsd/3somesPlus/ArtandSocialChange.pdf",
           },
           {
             text: (
@@ -787,8 +784,7 @@ const degrowth = {
                 Temporary Services, 2009.
               </>
             ),
-            url:
-              "http://www.tenstakonsthall.se/site/wp-content/uploads/2012/01/Art_Work_A_National_Conversation_About_Art_Labor__Economics_Temporary_Services3.pdf",
+            url: "http://www.tenstakonsthall.se/site/wp-content/uploads/2012/01/Art_Work_A_National_Conversation_About_Art_Labor__Economics_Temporary_Services3.pdf",
           },
           {
             text: (
@@ -807,8 +803,7 @@ const degrowth = {
                 Alberto Acosta, 2016.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/dim/degrowth-in-movements/buen-vivir/",
+            url: "https://www.degrowth.info/en/dim/degrowth-in-movements/buen-vivir/",
           },
           {
             text: (
@@ -822,8 +817,7 @@ const degrowth = {
                 57(3–4), pp 362–75, 2014.
               </>
             ),
-            url:
-              "https://www.researchgate.net/publication/287984144_Buen_Vivir_Degrowth_and_Ecological_Swaraj_Alternatives_to_Sustainable_Development_and_Green_Economy",
+            url: "https://www.researchgate.net/publication/287984144_Buen_Vivir_Degrowth_and_Ecological_Swaraj_Alternatives_to_Sustainable_Development_and_Green_Economy",
           },
           {
             text: (
@@ -834,8 +828,7 @@ const degrowth = {
                 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/critique-and-the-organization-of-production/",
+            url: "https://www.degrowth.info/en/catalogue-entry/critique-and-the-organization-of-production/",
           },
           {
             text: (
@@ -848,8 +841,7 @@ const degrowth = {
                 Isaac Kamola and Eli Meyerhof, in Polygraph 21, 2009.
               </>
             ),
-            url:
-              "http://www.elimeyerhoff.com/articles/KamolaMeyerhoff_CreatingCommons.pdf",
+            url: "http://www.elimeyerhoff.com/articles/KamolaMeyerhoff_CreatingCommons.pdf",
           },
           {
             text: (
@@ -863,8 +855,7 @@ const degrowth = {
                 Minnesota Press, 2007.
               </>
             ),
-            url:
-              "http://www.gregorysholette.com/wp-content/uploads/2013/06/stimson_sholette_collectivism_after_modernism.pdf",
+            url: "http://www.gregorysholette.com/wp-content/uploads/2013/06/stimson_sholette_collectivism_after_modernism.pdf",
           },
           {
             text: (
@@ -902,8 +893,7 @@ const degrowth = {
                 E: Nature and Space 2, no. 3 (2019): 465–92.{" "}
               </>
             ),
-            url:
-              "https://journals.sagepub.com/doi/full/10.1177/2514848618819478",
+            url: "https://journals.sagepub.com/doi/full/10.1177/2514848618819478",
           },
           {
             text: (
@@ -927,8 +917,7 @@ const degrowth = {
                 Leipzig, 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/degrowth-and-ecofeminism-perspectives-for-economic-analysis-and-political-engagement/",
+            url: "https://www.degrowth.info/en/catalogue-entry/degrowth-and-ecofeminism-perspectives-for-economic-analysis-and-political-engagement/",
           },
           {
             text: (
@@ -938,8 +927,7 @@ const degrowth = {
                 Edited by L'Internationale Online, 2021.
               </>
             ),
-            url:
-              "https://www.internationaleonline.org/library/#degrowth_and_progress",
+            url: "https://www.internationaleonline.org/library/#degrowth_and_progress",
           },
           {
             text: (
@@ -953,8 +941,7 @@ const degrowth = {
                 Conference, Leipzig, 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/degrowth-and-the-re-organization-of-work-a-feminist-perspective/",
+            url: "https://www.degrowth.info/en/catalogue-entry/degrowth-and-the-re-organization-of-work-a-feminist-perspective/",
           },
           {
             text: (
@@ -964,8 +951,7 @@ const degrowth = {
                 Samuel Alexander, Melbourne: The University of Melbourne, 2017.
               </>
             ),
-            url:
-              "https://sustainable.unimelb.edu.au/__data/assets/pdf_file/0004/2752276/MSSI-Monograph-Aesthetics_of_Existence_2017.pdf",
+            url: "https://sustainable.unimelb.edu.au/__data/assets/pdf_file/0004/2752276/MSSI-Monograph-Aesthetics_of_Existence_2017.pdf",
           },
           {
             text: (
@@ -979,8 +965,7 @@ const degrowth = {
                 on Degrowth-Descrecimiento, México City, 2018.
               </>
             ),
-            url:
-              "https://degrowth.descrecimiento.org/documentos/in-extenso/00375.pdf",
+            url: "https://degrowth.descrecimiento.org/documentos/in-extenso/00375.pdf",
           },
           {
             text: (
@@ -1002,8 +987,7 @@ const degrowth = {
                 Equity, Venice, 2012.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/ecofeminist-thought-and-practice/",
+            url: "https://www.degrowth.info/en/catalogue-entry/ecofeminist-thought-and-practice/",
           },
           {
             text: (
@@ -1023,8 +1007,7 @@ const degrowth = {
                 Critical Art Ensemble, Autonomedia, 1996.
               </>
             ),
-            url:
-              "https://monoskop.org/images/d/df/Critical_Art_Ensemble_Electronic_Civil_Disobedience_and_Other_Unpopular_Ideas.pdf",
+            url: "https://monoskop.org/images/d/df/Critical_Art_Ensemble_Electronic_Civil_Disobedience_and_Other_Unpopular_Ideas.pdf",
           },
           {
             text: (
@@ -1035,8 +1018,7 @@ const degrowth = {
                 Economic Degrowth, Barcelona, 2010.
               </>
             ),
-            url:
-              "https://yorkspace.library.yorku.ca/xmlui/bitstream/handle/10315/37059/Equitable%2c%20Ecological%20Degrowth-%20Feminist%20Contributions%20.pdf?sequence=1&isAllowed=y",
+            url: "https://yorkspace.library.yorku.ca/xmlui/bitstream/handle/10315/37059/Equitable%2c%20Ecological%20Degrowth-%20Feminist%20Contributions%20.pdf?sequence=1&isAllowed=y",
           },
           {
             text: (
@@ -1059,8 +1041,7 @@ const degrowth = {
                 149-161.
               </>
             ),
-            url:
-              "https://www.degrowth.info/wp-content/uploads/2018/10/No75YNakano.pdf",
+            url: "https://www.degrowth.info/wp-content/uploads/2018/10/No75YNakano.pdf",
           },
           {
             text: (
@@ -1070,8 +1051,7 @@ const degrowth = {
                 Critical Art Ensemble in Art Journal, Vol. 57, No. 2, 1998.
               </>
             ),
-            url:
-              "http://www.cs.cornell.edu/~nak44/pdfs/CAEObservationsOnCollectiveCulturalAction.pdf",
+            url: "http://www.cs.cornell.edu/~nak44/pdfs/CAEObservationsOnCollectiveCulturalAction.pdf",
           },
           {
             text: (
@@ -1085,8 +1065,7 @@ const degrowth = {
                 5, 2015, pp 58-65.
               </>
             ),
-            url:
-              "https://cultures-of-enlivenment.org/sites/cultures-of-enlivenment.org/files/manifesto_solutions_weber_kurt_dec_2015.pdf",
+            url: "https://cultures-of-enlivenment.org/sites/cultures-of-enlivenment.org/files/manifesto_solutions_weber_kurt_dec_2015.pdf",
           },
           {
             text: (
@@ -1099,8 +1078,7 @@ const degrowth = {
                 Degrowth Conference, Leipzig, 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/public-spaces-everyday-resistance-and-alternative-societies/",
+            url: "https://www.degrowth.info/en/catalogue-entry/public-spaces-everyday-resistance-and-alternative-societies/",
           },
           {
             text: (
@@ -1110,8 +1088,7 @@ const degrowth = {
                 Naomi Klein in New Left Review 9, May/June 2001.
               </>
             ),
-            url:
-              "https://newleftreview.org/issues/ii9/articles/naomi-klein-reclaiming-the-commons.pdf",
+            url: "https://newleftreview.org/issues/ii9/articles/naomi-klein-reclaiming-the-commons.pdf",
           },
           {
             text: (
@@ -1122,8 +1099,7 @@ const degrowth = {
                 Conference, Leipzig, 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/reproductivity-in-a-perspective-of-material-feminism/",
+            url: "https://www.degrowth.info/en/catalogue-entry/reproductivity-in-a-perspective-of-material-feminism/",
           },
           {
             text: (
@@ -1135,8 +1111,7 @@ const degrowth = {
                 Environment and Resources 43 (1), 2018.
               </>
             ),
-            url:
-              "https://www.researchgate.net/publication/325492725_Research_On_Degrowth",
+            url: "https://www.researchgate.net/publication/325492725_Research_On_Degrowth",
           },
           {
             text: (
@@ -1147,8 +1122,7 @@ const degrowth = {
                 Sternberg Press / Nifca, 2006.
               </>
             ),
-            url:
-              "https://pankov.files.wordpress.com/2010/03/17886868-selforganisation-countereconomic-strategies11.pdf",
+            url: "https://pankov.files.wordpress.com/2010/03/17886868-selforganisation-countereconomic-strategies11.pdf",
           },
           {
             text: (
@@ -1159,8 +1133,7 @@ const degrowth = {
                 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/sleep-and-stillness-in-a-mobile-economy/",
+            url: "https://www.degrowth.info/en/catalogue-entry/sleep-and-stillness-in-a-mobile-economy/",
           },
           {
             text: (
@@ -1182,8 +1155,7 @@ const degrowth = {
                 Okwui Enwezor, 2004
               </>
             ),
-            url:
-              "http://s3.amazonaws.com/arena-attachments/91879/0505bf888a2947e619a29c0e345b705e.pdf?1364573531",
+            url: "http://s3.amazonaws.com/arena-attachments/91879/0505bf888a2947e619a29c0e345b705e.pdf?1364573531",
           },
           {
             text: (
@@ -1213,8 +1185,7 @@ const degrowth = {
                 Cornelius Castoriadis, trans. Kathleen Blamey, MIT Press, 1997.
               </>
             ),
-            url:
-              "https://libcom.org/files/57798630-Castoriadis-The-Imaginary-Institution-of-Society.pdf",
+            url: "https://libcom.org/files/57798630-Castoriadis-The-Imaginary-Institution-of-Society.pdf",
           },
           {
             text: (
@@ -1224,8 +1195,7 @@ const degrowth = {
                 Ayni Institute
               </>
             ),
-            url:
-              "https://medium.com/@ayni.institute/the-strategy-of-mutual-aid-b7ec8e5caf46",
+            url: "https://medium.com/@ayni.institute/the-strategy-of-mutual-aid-b7ec8e5caf46",
           },
           {
             text: (
@@ -1235,8 +1205,7 @@ const degrowth = {
                 Ivan Illich, Fontana/Collins, 1973.
               </>
             ),
-            url:
-              "https://monoskop.org/images/3/3e/Illich_Ivan_Tools_for_Conviviality_1975.pdf",
+            url: "https://monoskop.org/images/3/3e/Illich_Ivan_Tools_for_Conviviality_1975.pdf",
           },
           {
             text: (
@@ -1256,8 +1225,7 @@ const degrowth = {
                 2014.
               </>
             ),
-            url:
-              "https://www.degrowth.info/en/catalogue-entry/values-and-ethics-in-an-alternative-degrowth-society/",
+            url: "https://www.degrowth.info/en/catalogue-entry/values-and-ethics-in-an-alternative-degrowth-society/",
           },
           {
             text: (
@@ -1271,8 +1239,7 @@ const degrowth = {
                 191-215.
               </>
             ),
-            url:
-              "https://www.researchgate.net/publication/260161434_What_is_Degrowth_From_an_Activist_Slogan_to_a_Social_Movement",
+            url: "https://www.researchgate.net/publication/260161434_What_is_Degrowth_From_an_Activist_Slogan_to_a_Social_Movement",
           },
         ],
       },
@@ -1292,8 +1259,7 @@ const degrowth = {
           ),
           button: {
             copy: "Contribute",
-            url:
-              "https://docs.google.com/forms/d/e/1FAIpQLScQg84c6XIV4i01dVIgGI3RDR7O82iNsJ9bP5MCdqPiP5DftA/viewform",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLScQg84c6XIV4i01dVIgGI3RDR7O82iNsJ9bP5MCdqPiP5DftA/viewform",
           },
         },
       },
@@ -1325,7 +1291,7 @@ const degrowth = {
           "Built by Charlotte Curran.",
           "Special thanks to Reyhaneh Mirjahani.",
           <>
-            Made during the 1st{" "}
+            This beta was written by Alexandra Papademetriou during the 1st{" "}
             <a
               href="https://wendy.network/"
               target="_blank"
