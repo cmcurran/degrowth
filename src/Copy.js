@@ -1287,9 +1287,6 @@ const degrowth = {
       body: {
         variant: "paragraph",
         copy: [
-          "Written by Alexandra Papademetriou.",
-          "Built by Charlotte Curran.",
-          "Special thanks to Reyhaneh Mirjahani.",
           <>
             This beta was written by Alexandra Papademetriou during the 1st{" "}
             <a
@@ -1301,6 +1298,10 @@ const degrowth = {
             </a>{" "}
             virtual residency, March 2021.
           </>,
+
+          "Built by Charlotte Curran.",
+          "Special thanks to Reyhaneh Mirjahani.",
+
           <>
             <a
               rel="license"
