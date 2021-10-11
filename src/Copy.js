@@ -1300,7 +1300,7 @@ const degrowth = {
           </>,
 
           "Built by Charlotte Curran.",
-          "Special thanks to Reyhaneh Mirjahani.",
+          // "Special thanks to Reyhaneh Mirjahani.",
 
           <>
             <a
